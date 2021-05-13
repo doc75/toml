@@ -32,7 +32,9 @@ class Hash
     tables.each do |key, val|
       key = "#{path}.#{key}" unless path.empty?
       toml_val = val.to_toml(key)
-      unless toml_val.empty?
+      if toml_val.empty?
+        toml << "\n[#{key}]\n"
+      else
         if val.toml_table?
           non_table_vals = val.values.reject do |v|
             v.toml_table? || v.toml_table_array?

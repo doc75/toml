@@ -32,6 +32,11 @@ class TestGenerator < MiniTest::Test
       ],
       "key" => {
         "group" => {
+          "with" => {
+            "no" => {
+              "value" => {}
+            }
+          },
           "value" => "lol"
         },
         "nil_table" => {}
@@ -50,7 +55,7 @@ class TestGenerator < MiniTest::Test
 
     # removing the nil value
     remove_nil = doc.delete "nil"
-    remove_nil_table = doc["key"].delete "nil_table"
+    #remove_nil_table = doc["key"].delete "nil_table"
 
     # Extracting dates since Ruby's DateTime equality testing sucks.
     original_date = doc.delete "date"

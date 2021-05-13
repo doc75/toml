@@ -5,20 +5,20 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.rubygems_version = '1.3.5'
 
-  s.name              = 'toml'
+  s.name              = 'toml_empty'
   s.version           = TOML::VERSION
 
   ## Make sure your summary is short. The description may be as long
   ## as you like.
-  s.summary     = "Parse your TOML."
-  s.description = "Parse your TOML, seriously."
+  s.summary     = "Parse your TOML (allow empty group)."
+  s.description = "Parse your TOML (allow empty group), seriously."
 
   ## List the primary authors. If there are a bunch of authors, it's probably
   ## better to set the email to an email list or something. If you don't have
   ## a custom homepage, consider using your GitHub URL or the like.
-  s.authors  = ["Jeremy McAnally", "Dirk Gadsden"]
-  s.email    = 'jeremy@github.com'
-  s.homepage = 'http://github.com/jm/toml'
+  s.authors  = ["Jeremy McAnally", "Dirk Gadsden", "Guillaume Virlet"]
+  s.email    = 'github@virlet.org'
+  s.homepage = 'http://github.com/doc75/toml'
   s.license  = 'MIT'
 
   ## Specify any RDoc options here. You'll want to add your README and

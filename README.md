@@ -1,3 +1,19 @@
+# Fork
+
+This repo is a fork of toml.
+
+The main modification is that it allows empty group to be generated (in toml gem, they are read, but not saved)
+
+If you have a group with no value like this:
+```toml
+[group.with.no.value]
+
+[otherkey]
+key = value
+```
+
+It will be managed correctly (load and save)
+
 # TOML
 
 A Ruby parser for [TOML](https://github.com/mojombo/toml), built on [parslet](https://github.com/kschiess/parslet).
@@ -11,7 +27,7 @@ This is far superior to YAML and JSON because it doesn't suck.  Really it doesn'
 Install this library:
 
 ```ruby
-gem "toml", "~> 0.3.0"
+gem "toml_empty", "~> 0.1.0"
 ```
 
 ```bash
