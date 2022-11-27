@@ -27,11 +27,7 @@ This is far superior to YAML and JSON because it doesn't suck.  Really it doesn'
 Install this library:
 
 ```ruby
-gem "toml_empty", "~> 0.1.0"
-```
-
-```bash
-gem install "toml"
+gem "toml_empty", "~> 0.3.0"
 ```
 
 It's simple, really.
